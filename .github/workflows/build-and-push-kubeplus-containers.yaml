@@ -36,7 +36,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            gcr.io/cloudark-kubeplus/kubeplus/consumerui:${{ env.consumerui_version }}
+            us-central1-docker.pkg.dev/titanium-gadget-502516-g3/my-repo/consumerui:${{ env.consumerui_version }}
             
       - name: Get latest version of webhook-tls-getter
         run: |
@@ -51,4 +51,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            gcr.io/cloudark-kubeplus/kubeplus/webhook-tls-getter:${{ env.webhook_tls_getter_version }}
+            us-central1-docker.pkg.dev/titanium-gadget-502516-g3/my-repo/webhook-tls-getter:${{ env.webhook_tls_getter_version }}
