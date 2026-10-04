@@ -1,10 +1,10 @@
-name: Build and Push KubePlus containers
+name: Test Build and Push KubePlus containers
 
 on:
   workflow_dispatch:
 
 jobs:
-  build-and-push:
+  build-and-push-containers:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
