@@ -19,7 +19,7 @@ jobs:
       - name: Log in to GAR
         uses: docker/login-action@v3
         with:
-          registry: gcr.io
+          registry: us-central1-docker.pkg.dev
           username: _json_key
           password: ${{ secrets.GCP_SA_KEY }} # secret name may need to be changed
 
